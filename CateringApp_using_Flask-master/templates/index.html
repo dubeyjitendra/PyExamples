@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>home</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+         {% if messages %}
+               {% for message in messages %}
+                    <p>{{ message }}</p>
+               {% endfor %}
+         {% endif %}
+      {% endwith %}
+<h3>Welcome to the website</h3>
+<a href = "{{ url_for('login') }}">login</a>
+</body>
+</html>
+
+
+# login.html
+<html>
+<head>
+    <title>login</title>
+</head>
+<body>
+    {% if error %}
+        <p><strong>Error</strong>: {{error}}</p>
+    {% endif %}
+
+    <form method = "post" action = "/login">
+        <table>
+            <tr><td>Email</td><td><input type = 'email' name = 'email'></td></tr>
+            <tr><td>Password</td><td><input type = 'password' name = 'pass'></td></tr>
+            <tr><td><input type = "submit" value = "Submit"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
