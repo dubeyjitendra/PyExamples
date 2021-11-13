@@ -17,3 +17,9 @@
 7- DL
 
 8- SQL
+
+9- Computer Vision
+
+10- Linear Algebra
+
+11- Cheatsheet
