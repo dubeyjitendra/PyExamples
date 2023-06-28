@@ -10,6 +10,9 @@ link:
 
 https://github.com/ultralytics/ultralytics
 
+Training Link:
+https://blog.roboflow.com/how-to-train-yolov8-on-a-custom-dataset/
+
 
 ## YOLO (You Only Look Once),
  a popular object detection and image segmentation model, was developed by Joseph Redmon and Ali Farhadi at the University of Washington. Launched in 2015, YOLO quickly gained popularity for its high speed and accuracy.
